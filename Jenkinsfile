@@ -2,12 +2,21 @@ pipeline {
   agent any
   stages {
     stage('Test') {
-      steps {
-        sh '''
+      parallel {
+        stage('Test') {
+          steps {
+            sh '''
 
 
 
 pwd; ls'''
+          }
+        }
+        stage('') {
+          steps {
+            sh 'ls -lhtr && pwd'
+          }
+        }
       }
     }
   }
