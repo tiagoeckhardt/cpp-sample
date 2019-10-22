@@ -12,7 +12,7 @@ pipeline {
 pwd; ls'''
           }
         }
-        stage('') {
+        stage('Prod') {
           steps {
             sh 'ls -lhtr && pwd'
           }
