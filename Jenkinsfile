@@ -19,9 +19,14 @@ pwd; ls'''
         }
       }
     }
-    stage('Construção') {
+    stage('ConstruÃ§Ã£o') {
       steps {
         sh 'ls && pwd'
+      }
+    }
+    stage('Gerar') {
+      steps {
+        sh 'ls; pwd'
       }
     }
   }
