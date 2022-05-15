@@ -1,12 +1,11 @@
-// cppsample.cpp : Defines the entry point for the console application.
-//
-
-#include "stdafx.h"
 #include <stdio.h>
- 
 int main()
 {
-       // printf() displays the string inside quotation
-       printf("Olá mundo!");
-       return 0;
+    int num=1;     // inicializando a variável
+    while(num<=10) // enquanto ciclo com condição
+    {
+        printf("%d\n",num);
+        num++;     // operação de incremento
+    }
+    return 0;
 }
